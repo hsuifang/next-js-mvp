@@ -1,38 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Production
 
-## Getting Started
+[路徑請點 => next-js-mvp](https://next-js-mvp-pink.vercel.app/)
 
-First, run the development server:
+## Feature
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- 提供 index、about、user 及動態 user 頁面
+- 透過 user 頁面了解動態資料的簡易使用 - `getStaticProps`、`getStaticPaths`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 資料夾
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### components
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- 放置不用渲染、共用頁面
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### modals
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- typescript 共用
 
-## Learn More
+### pages
 
-To learn more about Next.js, take a look at the following resources:
+- 放置所有 page 的元件
+- 在理想上，每個 page 都有自己的 components
+- index.js 是 home page 的概念
+- `_app.js` 是一個 root component
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### public
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- images
 
-## Deploy on Vercel
+### styles
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 共用: global
+- module: xxx.moudele.css
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## How To Start
+
+> npm run dev
