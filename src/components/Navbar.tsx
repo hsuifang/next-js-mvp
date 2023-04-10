@@ -9,7 +9,7 @@ export default function Navbar() {
       </div>
       <Link href="/">Home</Link>
       <Link href="/about"> | About</Link>
-      <Link href="/users"> | FangFang Listing</Link>
+      <Link href="/users"> | User List</Link>
     </nav>
   )
 }
